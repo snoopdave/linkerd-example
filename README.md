@@ -4,7 +4,9 @@ This is an example project that illustrates how Linkerd's MTLS feature works.
 When you install and configure Linkerd on a Kubernetes cluster, Linkerd will ensire that all network communication between notes is TLS encrypted on both ends: the client and server must each provide a TLS certificate. 
 This is known as Mutual TLS or MTLS.
 
-This project was generated almost entirely by ChatGPT4 using prompts explain here: [PROMPTS.md](./PROMPTS.md).
+<img src="Linkerd.jpg" alt="Linkerd logo" width="300" />
+
+Except for this README, this project was generated almost entirely by ChatGPT4 using prompts explain here: [PROMPTS.md](./PROMPTS.md).
 
 ## Prerequisites
 
@@ -31,7 +33,7 @@ Code running on Service A can make HTTP calls to Service B and vice versa, and b
 
 ### In Terminal window #1
 
-First, one up one terminal window and run these commands:
+First, one up one terminal window and run these commands to "tap" the network:
 
     kubens mtls-example
     linkerd viz tap deploy
@@ -71,6 +73,19 @@ As you run these commands you start to see output like below in Terminal window 
     rsp id=6:4 proxy=out src=10.1.0.128:58358 dst=10.1.0.127:8080 tls=true :status=200 latency=2688µs
     end id=7:4 proxy=in  src=10.1.0.128:57948 dst=10.1.0.127:8080 tls=true duration=49µs response-length=17B
     end id=6:4 proxy=out src=10.1.0.128:58358 dst=10.1.0.127:8080 tls=true duration=32µs response-length=17B
+
+## The Linkerd web UI 
+
+You can launch the Linkerd dashboard via the command below:
+
+    linkerd dashboard
+
+You can tap the network in the web UI as well:
+
+<img src="linkerd-web.png" width="600" alt="Linkerd screenshot "/>
+
+
+
 
 
 
