@@ -4,6 +4,9 @@ This is an example project that illustrates how Linkerd's MTLS feature works.
 When you install and configure Linkerd on a Kubernetes cluster, Linkerd will ensire that all network communication between notes is TLS encrypted on both ends: the client and server must each provide a TLS certificate. 
 This is known as Mutual TLS or MTLS.
 
+This example will show how Linkerd can be installed and used to "enmesh" servies so that their inter-communications is secured by MTLS. 
+If you follow along, you will install Linkerd, build and deploy two services and then enmesh them with Linkerd. Then, you'll run some curl commands to call between services and verify that TLS is in force.
+
 <img src="Linkerd.jpg" alt="Linkerd logo" width="300" />
 
 Except for this README, this project was generated almost entirely by ChatGPT4 using prompts explain here: [PROMPTS.md](./PROMPTS.md).
