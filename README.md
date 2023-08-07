@@ -1,6 +1,8 @@
 # README.md: linkerd-example
 
-This is an example project that illustrates how Linkerd's MTLS feature works.
+Linkerd is a service mesh designed to give platform-wide observability, reliability, and security without requiring changes to the application code.
+Linkerd supports a number of use-cases.
+This example project that illustrates how Linkerd's MTLS security feature works.
 When you install and configure Linkerd on a Kubernetes cluster, Linkerd will ensire that all network communication between notes is TLS encrypted on both ends: the client and server must each provide a TLS certificate. 
 This is known as Mutual TLS or MTLS.
 
