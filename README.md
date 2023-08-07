@@ -1,4 +1,4 @@
-# README.md
+# README.md: linkerd-example
 
 This is an example project that illustrates how Linkerd's MTLS feature works.
 When you install and configure Linkerd on a Kubernetes cluster, Linkerd will ensire that all network communication between notes is TLS encrypted on both ends: the client and server must each provide a TLS certificate. 
