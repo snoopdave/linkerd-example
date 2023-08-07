@@ -36,7 +36,7 @@ Code running on Service A can make HTTP calls to Service B and vice versa, and b
 
 ### In Terminal window #1
 
-First, one up one terminal window and run these commands to "tap" the network:
+First, open up one terminal window and run these commands to "tap" the network:
 
     kubens mtls-example
     linkerd viz tap deploy
