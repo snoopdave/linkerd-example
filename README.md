@@ -11,7 +11,7 @@ If you follow along, you will install Linkerd, build and deploy two services and
 
 <img src="Linkerd.jpg" alt="Linkerd logo" width="300" />
 
-Except for this README, this project was generated almost entirely by ChatGPT4 using prompts explain here: [PROMPTS.md](./PROMPTS.md).
+Except for this README, this project was generated almost entirely by ChatGPT4 using prompts explained here: [PROMPTS.md](./PROMPTS.md).
 
 ## Prerequisites
 
